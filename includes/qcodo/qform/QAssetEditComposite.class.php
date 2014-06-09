@@ -812,7 +812,7 @@ class QAssetEditComposite extends QControl {
 		// 200 Days: 17280000
 
 		$this->calPurchaseDate->MinimumYear = $dateToSetup->Year < ($this->dttNow->Year-5) ?
-			  $dateToSetup->Year : ($this->dttNow->Year-5);
+			  $dateToSetup->Year : ($this->dttNow->Year-10);
 		$this->calPurchaseDate->MaximumYear = $this->dttNow->Year+1;
 
 		if(QApplication::$TracmorSettings->DepreciationFlag == '1'){
